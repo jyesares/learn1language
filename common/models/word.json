@@ -1,0 +1,43 @@
+{
+  "name": "word",
+  "plural": "words",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "gender": {
+      "type": "string",
+      "required": true
+    },
+    "form": {
+      "type": "string",
+      "required": true
+    },
+    "images": {
+      "type": [
+        "string"
+      ]
+    },
+    "translation": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string",
+      "required": true,
+      "default": "german"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
